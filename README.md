@@ -9,9 +9,11 @@ Este es un ejemplo de como utilizar el nuevo plugin de Webpack, Module Federatio
 **Comandos**
 - `yarn install` - Instala dependencias
 - `ng serve remote` - Corre remote aplicacion remota en el puerto `3000`
-- `ng serve shell` - Corre remote aplicacion remota en el puerto `500`
+- `ng serve shell` - Corre remote aplicacion remota en el puerto `5000`
 
 ---
+
+Gracias por compartir!
 
 ### Module Federation with Angular
 
@@ -24,4 +26,6 @@ This is an example of how to use Angular with the new Module Federation plugin f
 **Commands**
 - `yarn install` - Instala dependencias
 - `ng serve remote` - Corre remote aplicacion remota en el puerto `3000`
-- `ng serve shell` - Corre remote aplicacion remota en el puerto `500`
+- `ng serve shell` - Corre remote aplicacion remota en el puerto `5000`
+
+Thanks for sharing!
