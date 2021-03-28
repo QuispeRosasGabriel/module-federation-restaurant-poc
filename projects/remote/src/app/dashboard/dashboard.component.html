@@ -1,0 +1,11 @@
+<div>
+  <ng-container *ngIf="session?.isActive; else loggedOut">
+    <figure>
+      <img src="http://localhost:3000/assets/menu.jpg" />
+    </figure>
+  </ng-container>
+  <ng-template #loggedOut>
+    <p>Inicia sesión para ver nuestro menú ejecutivo</p>
+  </ng-template>
+
+</div>

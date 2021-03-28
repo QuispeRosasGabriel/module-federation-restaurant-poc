@@ -1,0 +1,36 @@
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Shell App</span>
+    <div>
+      <a mat-button [routerLink]="'/'"> Home </a>
+      <a mat-button [routerLink]="'/dashboard'"> Menú ejecutivo </a>
+    </div>
+    <span class="menu-spacer"></span>
+    <div>
+      <button mat-button  (click)="click()">
+        <ng-container *ngIf="session?.isActive; else logIn">
+          <mat-icon>exit_to_app</mat-icon>
+        </ng-container>
+
+        <ng-template #logIn>
+          Log In
+        </ng-template>
+      </button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<main>
+  <h1>Module Federation 🎈🎉 /
+    <ng-container *ngIf="session?.isActive; else loggedOut">
+      Sesión inciada con éxito, por favor observa nuestro menú ejecutivo 😀😎
+    </ng-container>
+
+    <ng-template #loggedOut>
+      Sesión inactiva, por favor inicia sesión
+    </ng-template>
+
+  </h1>
+  <router-outlet></router-outlet>
+</main>

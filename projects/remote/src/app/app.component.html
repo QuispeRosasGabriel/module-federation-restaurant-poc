@@ -1,0 +1,14 @@
+<mat-toolbar color="secondary">
+  <mat-toolbar-row color="secondary">
+    <span>Admin App</span>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/'"> Home </a>
+      <a mat-button [routerLink]="'/dashboard'"> Menú ejecutivo </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
