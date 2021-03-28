@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { SessionLibService } from 'session-lib';
-
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
 
-  constructor(public session: SessionLibService) { }
+  constructor() { }
 
   ngOnInit(): void {
 
